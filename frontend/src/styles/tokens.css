@@ -1,0 +1,127 @@
+
+/* ============================================
+   SOLVESPACE — DESIGN TOKENS
+   Visual Direction: Premium Dark SaaS
+   ============================================ */
+
+:root {
+  /* Backgrounds */
+  --ss-bg-primary: #080b14;
+  --ss-bg-secondary: #0d1220;
+  --ss-bg-tertiary: #121a2b;
+  --ss-bg-canvas: radial-gradient(circle at top, rgba(118, 88, 245, 0.16), transparent 30%), #080b14;
+
+  /* Surfaces */
+  --ss-surface: rgba(17, 24, 44, 0.9);
+  --ss-surface-elevated: rgba(24, 34, 58, 0.94);
+  --ss-surface-hover: #1c2942;
+  --ss-surface-soft: rgba(255, 255, 255, 0.03);
+
+  /* Brand colors */
+  --ss-primary: #7658f5;
+  --ss-primary-hover: #896fff;
+  --ss-primary-soft: rgba(118, 88, 245, 0.14);
+  --ss-primary-ring: rgba(118, 88, 245, 0.45);
+
+  --ss-blue: #398cff;
+  --ss-cyan: #32c9ed;
+
+  /* Semantic colors */
+  --ss-success: #31d69b;
+  --ss-warning: #ffba55;
+  --ss-danger: #ff647c;
+  --ss-info: #52a9ff;
+
+  /* Typography */
+  --ss-text-primary: #f5f6ff;
+  --ss-text-secondary: #a6b0c5;
+  --ss-text-muted: #69768e;
+  --ss-text-inverse: #080b14;
+
+  /* Borders */
+  --ss-border: rgba(151, 169, 204, 0.13);
+  --ss-border-strong: rgba(151, 169, 204, 0.23);
+  --ss-border-focus: rgba(118, 88, 245, 0.75);
+
+  /* Gradients */
+  --ss-gradient-primary: linear-gradient(115deg, #7658f5 0%, #5048e9 55%, #268ff4 100%);
+  --ss-gradient-primary-soft: linear-gradient(135deg, rgba(118, 88, 245, 0.18), rgba(38, 143, 244, 0.12));
+  --ss-gradient-subtle: linear-gradient(135deg, rgba(118, 88, 245, 0.14), rgba(38, 143, 244, 0.07));
+
+  /* Typography families */
+  --ss-font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --ss-font-body: "Inter", "Segoe UI", sans-serif;
+  --ss-font-mono: "JetBrains Mono", monospace;
+
+  /* Font sizes */
+  --ss-text-xs: 0.75rem;
+  --ss-text-sm: 0.875rem;
+  --ss-text-base: 1rem;
+  --ss-text-lg: 1.125rem;
+  --ss-text-xl: 1.25rem;
+  --ss-text-2xl: 1.5rem;
+  --ss-text-3xl: 1.875rem;
+  --ss-text-4xl: 2.25rem;
+
+  /* Spacing */
+  --ss-space-1: 4px;
+  --ss-space-2: 8px;
+  --ss-space-3: 12px;
+  --ss-space-4: 16px;
+  --ss-space-5: 20px;
+  --ss-space-6: 24px;
+  --ss-space-8: 32px;
+  --ss-space-10: 40px;
+  --ss-space-12: 48px;
+
+  /* Border radius */
+  --ss-radius-sm: 8px;
+  --ss-radius-md: 12px;
+  --ss-radius-lg: 18px;
+  --ss-radius-xl: 24px;
+  --ss-radius-full: 999px;
+
+  /* Shadows */
+  --ss-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.18);
+  --ss-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.24);
+  --ss-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --ss-shadow-glow: 0 0 30px rgba(118, 88, 245, 0.15);
+
+  /* Layout */
+  --ss-sidebar-width: 268px;
+  --ss-content-max-width: 1800px;
+  --ss-header-height: 72px;
+
+  /* Transitions */
+  --ss-transition-fast: 160ms ease;
+  --ss-transition-normal: 240ms ease;
+  --ss-transition-slow: 400ms ease;
+
+  /* Layering */
+  --ss-z-header: 30;
+  --ss-z-sidebar: 40;
+  --ss-z-overlay: 50;
+  --ss-z-modal: 100;
+  --ss-z-toast: 120;
+}
+
+
+/* ============================================
+   TAILWIND-FRIENDLY THEME MAPPING
+   ============================================ */
+
+@theme {
+  --color-ss-bg: var(--ss-bg-primary);
+  --color-ss-surface: var(--ss-surface);
+  --color-ss-primary: var(--ss-primary);
+  --color-ss-blue: var(--ss-blue);
+  --color-ss-cyan: var(--ss-cyan);
+  --color-ss-success: var(--ss-success);
+  --color-ss-warning: var(--ss-warning);
+  --color-ss-danger: var(--ss-danger);
+  --color-ss-text: var(--ss-text-primary);
+
+  --font-ss-display: var(--ss-font-display);
+  --font-ss-body: var(--ss-font-body);
+  --font-ss-mono: var(--ss-font-mono);
+}
